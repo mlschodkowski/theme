@@ -1,0 +1,56 @@
+{
+  "name": "MLS",
+  "version": "1.0.0",
+  "description": "A muted, low-glare palette derived from xAI's Grok Night theme.",
+  "source": {
+    "name": "Grok Night",
+    "url": "https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager-render/assets/grok-night.tmTheme"
+  },
+  "colors": {
+    "background": "#0e0e0e",
+    "surface": "#1a1a1a",
+    "selection": "#383838",
+    "foreground": "#b2b2b2",
+    "foregroundBright": "#c8c8c8",
+    "muted": "#585d76",
+    "cursor": "#c9a470",
+    "terminalBlue": "#8993a3",
+    "terminalBrightBlue": "#b2b2b2",
+    "red": "#df7e90",
+    "green": "#96b970",
+    "amber": "#c9a470",
+    "blue": "#82a0e0",
+    "purple": "#b69de5",
+    "cyan": "#85c3e8"
+  },
+  "ansi": {
+    "black": "#0a0a0a",
+    "red": "#df7e90",
+    "green": "#96b970",
+    "yellow": "#c9a470",
+    "blue": "#8993a3",
+    "magenta": "#b69de5",
+    "cyan": "#85c3e8",
+    "white": "#b2b2b2",
+    "brightBlack": "#585d76",
+    "brightRed": "#df7e90",
+    "brightGreen": "#96b970",
+    "brightYellow": "#c9a470",
+    "brightBlue": "#b2b2b2",
+    "brightMagenta": "#b69de5",
+    "brightCyan": "#85c3e8",
+    "brightWhite": "#c8c8c8"
+  },
+  "syntax": {
+    "comment": "#585d76",
+    "keyword": "#c9a470",
+    "string": "#96b970",
+    "number": "#b69de5",
+    "function": "#82a0e0",
+    "type": "#85c3e8",
+    "constant": "#c9a470",
+    "operator": "#df7e90",
+    "punctuation": "#b2b2b2",
+    "error": "#df7e90"
+  }
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MLS</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e0e0e;
+      --surface: #1a1a1a;
+      --selection: #383838;
+      --fg: #b2b2b2;
+      --bright: #c8c8c8;
+      --muted: #585d76;
+      --rose: #df7e90;
+      --olive: #96b970;
+      --amber: #c9a470;
+      --blue: #82a0e0;
+      --terminal-blue: #8993a3;
+      --lavender: #b69de5;
+      --cyan: #85c3e8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--fg);
+      font: 15px/1.6 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    main {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 72px 0 80px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--amber);
+      font-size: 12px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 14px; color: var(--bright); font-size: clamp(30px, 5vw, 52px); letter-spacing: -.06em; }
+    h2 { margin: 0 0 18px; color: var(--bright); font-size: 16px; }
+    .intro { max-width: 700px; color: var(--muted); }
+
+    .swatches {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      margin: 56px 0;
+      overflow: hidden;
+      border: 1px solid var(--surface);
+      background: var(--surface);
+    }
+
+    .swatch { min-height: 112px; padding: 16px; background: var(--bg); }
+    .chip { width: 26px; height: 26px; margin-bottom: 22px; border: 1px solid rgb(255 255 255 / .12); }
+    .swatch strong { display: block; color: var(--bright); font-size: 13px; }
+    .swatch code { color: var(--muted); font-size: 12px; }
+
+    .examples { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+    .panel { overflow: hidden; border: 1px solid var(--surface); background: #101010; }
+    .panel-header { display: flex; justify-content: space-between; padding: 12px 16px; border-bottom: 1px solid var(--surface); color: var(--muted); font-size: 12px; }
+    pre { margin: 0; padding: 20px; overflow: auto; color: var(--fg); font-size: 13px; line-height: 1.75; }
+    .comment { color: var(--muted); }
+    .keyword, .constant { color: var(--amber); }
+    .string { color: var(--olive); }
+    .number, .type { color: var(--lavender); }
+    .function { color: var(--blue); }
+    .tag { color: var(--cyan); }
+    .operator, .error { color: var(--rose); }
+    .punctuation { color: var(--fg); }
+    footer { margin-top: 52px; color: var(--muted); font-size: 12px; }
+    a { color: var(--blue); }
+
+    @media (max-width: 600px) {
+      main { width: min(100% - 24px, 1120px); padding-top: 44px; }
+      .swatches { margin: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">MLS theme</p>
+    <h1>Low glare. Clear signal.</h1>
+    <p class="intro">A nearly-black canvas with restrained accents for terminal work and code. Amber carries attention, olive carries values, and cool blue separates structure from prose.</p>
+
+    <section class="swatches" aria-label="Palette colors">
+      <article class="swatch"><div class="chip" style="background:#0e0e0e"></div><strong>Background</strong><code>#0e0e0e</code></article>
+      <article class="swatch"><div class="chip" style="background:#b2b2b2"></div><strong>Foreground</strong><code>#b2b2b2</code></article>
+      <article class="swatch"><div class="chip" style="background:#585d76"></div><strong>Muted</strong><code>#585d76</code></article>
+      <article class="swatch"><div class="chip" style="background:#c9a470"></div><strong>Amber</strong><code>#c9a470</code></article>
+      <article class="swatch"><div class="chip" style="background:#df7e90"></div><strong>Rose</strong><code>#df7e90</code></article>
+      <article class="swatch"><div class="chip" style="background:#96b970"></div><strong>Olive</strong><code>#96b970</code></article>
+      <article class="swatch"><div class="chip" style="background:#82a0e0"></div><strong>Blue</strong><code>#82a0e0</code></article>
+      <article class="swatch"><div class="chip" style="background:#8993a3"></div><strong>Terminal blue</strong><code>#8993a3</code></article>
+      <article class="swatch"><div class="chip" style="background:#b69de5"></div><strong>Lavender</strong><code>#b69de5</code></article>
+      <article class="swatch"><div class="chip" style="background:#85c3e8"></div><strong>Cyan</strong><code>#85c3e8</code></article>
+    </section>
+
+    <section>
+      <h2>Syntax in context</h2>
+      <div class="examples">
+        <article class="panel">
+          <div class="panel-header"><span>server.go</span><span>Go</span></div>
+          <pre><code><span class="keyword">package</span> <span class="function">main</span>
+
+<span class="keyword">import</span> <span class="string">"fmt"</span>
+
+<span class="keyword">type</span> <span class="type">Config</span> <span class="keyword">struct</span> <span class="punctuation">{</span>
+    <span class="type">Port</span> <span class="type">int</span>
+    <span class="type">Debug</span> <span class="type">bool</span>
+<span class="punctuation">}</span>
+
+<span class="keyword">func</span> <span class="function">serve</span><span class="punctuation">(</span>cfg <span class="type">Config</span><span class="punctuation">)</span> <span class="type">error</span> <span class="punctuation">{</span>
+    <span class="keyword">if</span> cfg<span class="punctuation">.</span>Debug <span class="punctuation">{</span>
+        fmt<span class="punctuation">.</span><span class="function">Println</span><span class="punctuation">(</span><span class="string">"debug server"</span><span class="punctuation">)</span>
+    <span class="punctuation">}</span>
+    <span class="keyword">return</span> <span class="constant">nil</span>
+<span class="punctuation">}</span></code></pre>
+        </article>
+
+        <article class="panel">
+          <div class="panel-header"><span>worker.py</span><span>Python</span></div>
+          <pre><code><span class="keyword">from</span> dataclasses <span class="keyword">import</span> <span class="function">dataclass</span>
+
+<span class="keyword">@dataclass</span>
+<span class="keyword">class</span> <span class="type">Job</span><span class="punctuation">:</span>
+    name<span class="punctuation">:</span> <span class="type">str</span>
+    retries<span class="punctuation">:</span> <span class="type">int</span> <span class="punctuation">=</span> <span class="number">3</span>
+
+<span class="keyword">def</span> <span class="function">run</span><span class="punctuation">(</span>job<span class="punctuation">:</span> <span class="type">Job</span><span class="punctuation">)</span> <span class="operator">-&gt;</span> <span class="type">bool</span><span class="punctuation">:</span>
+    <span class="comment"># Keep retries visible in the operator log.</span>
+    <span class="keyword">for</span> attempt <span class="keyword">in</span> <span class="function">range</span><span class="punctuation">(</span>job<span class="punctuation">.</span>retries<span class="punctuation">)</span><span class="punctuation">:</span>
+        <span class="keyword">if</span> <span class="function">execute</span><span class="punctuation">(</span>job<span class="punctuation">)</span><span class="punctuation">:</span>
+            <span class="keyword">return</span> <span class="constant">True</span>
+    <span class="keyword">return</span> <span class="constant">False</span></code></pre>
+        </article>
+      </div>
+    </section>
+
+    <footer>MLS is derived from <a href="https://github.com/xai-org/grok-build">xAI's Grok Night</a>; see the README for semantic roles and attribution.</footer>
+  </main>
+</body>
+</html>

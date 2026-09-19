@@ -1,0 +1,24 @@
+# MLS palette derived from the upstream MLS roles.
+background = #0e0e0e
+foreground = #b2b2b2
+cursor-color = #c9a470
+cursor-text = #0e0e0e
+selection-background = #383838
+selection-foreground = #c8c8c8
+palette = 0=#0a0a0a
+palette = 1=#df7e90
+palette = 2=#96b970
+palette = 3=#c9a470
+palette = 4=#8993a3
+palette = 5=#b69de5
+palette = 6=#85c3e8
+palette = 7=#b2b2b2
+palette = 8=#585d76
+palette = 9=#df7e90
+palette = 10=#96b970
+palette = 11=#c9a470
+palette = 12=#b2b2b2
+palette = 13=#b69de5
+palette = 14=#85c3e8
+palette = 15=#c8c8c8
+split-divider-color = #1a1a1a
