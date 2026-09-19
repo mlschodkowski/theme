@@ -6,7 +6,7 @@
   "mode": "dark",
   "tags": ["dark", "low-glare", "amber", "blue-gray"],
   "description": "A muted, low-glare dark theme for Codex Desktop.",
-  "codeThemeId": "one",
+  "codeThemeId": "night-owl",
   "theme": {
     "accent": "#c9a470",
     "background": "#0e0e0e",
