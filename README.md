@@ -76,6 +76,10 @@ For Codex desktop, copy the single line from
 [`codex/desktop/import.txt`](./codex/desktop/import.txt) and use
 **Settings → Appearance → Import** in the dark theme section.
 
+Codex CLI uses the exact MLS TextMate scopes. Codex desktop only accepts
+built-in syntax theme IDs, so its import uses `one-dark` as the closest
+supported syntax base while keeping MLS surfaces, accents, and diff colors.
+
 The VS Code adapter is a local extension package:
 
 ```sh
