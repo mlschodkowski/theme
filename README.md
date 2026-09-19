@@ -76,7 +76,9 @@ For Codex desktop, copy the single line from
 [`codex/desktop/import.txt`](./codex/desktop/import.txt) and use
 **Settings → Appearance → Import** in the dark theme section.
 
-Codex CLI uses the exact MLS TextMate scopes. Codex desktop only accepts
+Codex CLI uses the exact MLS TextMate scopes: ordinary identifiers and function
+names use the bright default foreground, while control-flow/declaration
+keywords remain accented and strings stay muted orange. Codex desktop only accepts
 built-in syntax theme IDs, so its import uses `night-owl` as the closest
 supported syntax base for the lavender keywords and warm strings while keeping
 MLS surfaces, accents, and diff colors.

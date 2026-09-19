@@ -7,7 +7,7 @@
   <array>
     <dict><key>settings</key><dict>
       <key>background</key><string>#0e0e0e</string>
-      <key>foreground</key><string>#b2b2b2</string>
+      <key>foreground</key><string>#c8c8c8</string>
       <key>caret</key><string>#c9a470</string>
       <key>selection</key><string>#383838</string>
       <key>lineHighlight</key><string>#1a1a1a</string>
@@ -20,10 +20,10 @@
     <dict><key>name</key><string>Number</string><key>scope</key><string>constant.numeric, constant.numeric.integer, constant.numeric.float, constant.numeric.python</string><key>settings</key><dict><key>foreground</key><string>#e49b70</string></dict></dict>
     <dict><key>name</key><string>Keyword</string><key>scope</key><string>keyword, keyword.control, keyword.control.flow, keyword.control.import, keyword.operator.word, keyword.operator.logical, storage, storage.type, storage.type.function, storage.type.class, storage.modifier, storage.modifier.async</string><key>settings</key><dict><key>foreground</key><string>#b69de5</string></dict></dict>
     <dict><key>name</key><string>Type</string><key>scope</key><string>entity.name.type, entity.name.type.class, entity.name.class, entity.name.struct, entity.name.enum, entity.other.inherited-class, support.type, support.type.builtin, support.class, meta.annotation</string><key>settings</key><dict><key>foreground</key><string>#b69de5</string></dict></dict>
-    <dict><key>name</key><string>Function</string><key>scope</key><string>entity.name.function, entity.name.function.python, entity.name.method, support.function, support.function.builtin, variable.function, meta.function-call, meta.function.python, meta.function.definition.python</string><key>settings</key><dict><key>foreground</key><string>#b2b2b2</string></dict></dict>
+    <dict><key>name</key><string>Function</string><key>scope</key><string>entity.name.function, entity.name.function.python, entity.name.method, support.function, support.function.builtin, variable.function, meta.function-call, meta.function.python, meta.function.definition.python</string><key>settings</key><dict><key>foreground</key><string>#c8c8c8</string></dict></dict>
     <dict><key>name</key><string>Decorator</string><key>scope</key><string>meta.function.decorator, entity.name.function.decorator, punctuation.definition.decorator, punctuation.definition.annotation, punctuation.separator.annotation</string><key>settings</key><dict><key>foreground</key><string>#c9a470</string></dict></dict>
     <dict><key>name</key><string>Operator</string><key>scope</key><string>keyword.operator, keyword.operator.assignment, keyword.operator.arithmetic, keyword.operator.comparison, keyword.operator.logical, punctuation.accessor, punctuation.separator.continuation, punctuation.definition.block, punctuation.section.block, punctuation.section.braces</string><key>settings</key><dict><key>foreground</key><string>#c9a470</string></dict></dict>
-    <dict><key>name</key><string>Parameter</string><key>scope</key><string>variable.parameter, variable.parameter.function, variable.parameter.function.python, variable.language, variable.other</string><key>settings</key><dict><key>foreground</key><string>#b2b2b2</string></dict></dict>
+    <dict><key>name</key><string>Parameter</string><key>scope</key><string>variable.parameter, variable.parameter.function, variable.parameter.function.python, variable.language, variable.other</string><key>settings</key><dict><key>foreground</key><string>#c8c8c8</string></dict></dict>
     <dict><key>name</key><string>Tag</string><key>scope</key><string>entity.name.tag, entity.other.attribute-name, markup.heading</string><key>settings</key><dict><key>foreground</key><string>#b69de5</string></dict></dict>
     <dict><key>name</key><string>Invalid</string><key>scope</key><string>invalid, invalid.illegal, invalid.deprecated</string><key>settings</key><dict><key>foreground</key><string>#df7e90</string></dict></dict>
   </array>
