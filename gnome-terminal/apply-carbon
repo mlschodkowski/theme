@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+base=/org/gnome/terminal/legacy
+default=$(dconf read "$base/profiles:/default" | tr -d "'\"")
+if [[ -z "$default" ]]; then
+  printf '%s\n' 'No GNOME Terminal default profile was found.' >&2
+  exit 1
+fi
+
+profile="$base/profiles:/$default/"
+dconf write "${profile}use-theme-colors" false
+dconf write "${profile}background-color" "'#161616'"
+dconf write "${profile}foreground-color" "'#A8A8A8'"
+dconf write "${profile}bold-color-same-as-fg" true
+dconf write "${profile}palette" "['#161616', '#FF8389', '#42BE65', '#F1C21B', '#4589FF', '#A56EFF', '#08BDBA', '#C8CCD4', '#525252', '#FF7EB6', '#6FDC8C', '#FDDC69', '#78A9FF', '#BE95FF', '#3DDBD9', '#F4F4F4']"
+dconf write "${profile}cursor-colors-set" true
+dconf write "${profile}cursor-background-color" "'#82CFFF'"
+dconf write "${profile}cursor-foreground-color" "'#161616'"
+printf 'Applied Carbon to GNOME Terminal profile %s.\n' "$default"

@@ -1,0 +1,19 @@
+# Carbon palette for fzf.
+export FZF_DEFAULT_OPTS="${FZF_DEFAULT_OPTS:-} \
+  --color=bg:#161616 \
+  --color=bg+:#262626 \
+  --color=border:#393939 \
+  --color=fg:#a8a8a8 \
+  --color=fg+:#c8ccd4 \
+  --color=gutter:#161616 \
+  --color=header:#78a9ff \
+  --color=hl:#3ddbd9 \
+  --color=hl+:#82cfff \
+  --color=info:#8d8d8d \
+  --color=marker:#6fdc8c \
+  --color=pointer:#4589ff \
+  --color=prompt:#4589ff \
+  --color=query:#c8ccd4 \
+  --color=scrollbar:#525252 \
+  --color=separator:#393939 \
+  --color=spinner:#08bdba"
