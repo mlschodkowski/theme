@@ -1,0 +1,22 @@
+{
+  "languages": {
+    "Go": {
+      "semantic_tokens": "combined",
+    },
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "semanticTokens": true,
+      },
+    },
+  },
+  "global_lsp_settings": {
+    "semantic_token_rules": [
+      {
+        "token_type": "parameter",
+        "style": ["variable.parameter"],
+      },
+    ],
+  },
+}

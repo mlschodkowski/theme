@@ -15,6 +15,7 @@ those tokens to each program's theme format:
 - `ghostty/carbon`
 - `gnome-terminal/apply-carbon`
 - `zed/Carbon.json`
+- `zed/go-semantic-tokens.jsonc` (merge into Zed settings)
 - `nvim/colors/carbon.lua`
 - `zsh/carbon-prompt.zsh` and `zsh/carbon-fzf.zsh`
 - `helix/config.toml` (built-in theme selection)
@@ -30,6 +31,10 @@ Ghostty, Zed, Neovim, tmux, and Zsh configs in this home directory select Carbon
 Set `theme = "carbon"` in Helix's `config.toml` to use its built-in theme.
 The Zed and Neovim ports preserve Carbon's italic syntax roles. Zed uses the
 installed `Ioskeley Mono` italic face, matching Ghostty in this setup.
+For Go, Zed combines gopls semantic tokens with Tree-sitter so parameters use
+Carbon's pink italic style. Zed's built-in Go query groups `return` with other
+control-flow keywords, so its theme cannot color `return` separately from
+`if`, `for`, and similar keywords.
 
 ## Sources
 
