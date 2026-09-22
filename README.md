@@ -28,6 +28,8 @@ its profile settings must be available on the system.
 
 Ghostty, Zed, Neovim, tmux, and Zsh configs in this home directory select Carbon.
 Set `theme = "carbon"` in Helix's `config.toml` to use its built-in theme.
+The Zed and Neovim ports preserve Carbon's italic syntax roles. Zed uses the
+installed `Ioskeley Mono` italic face, matching Ghostty in this setup.
 
 ## Sources
 
