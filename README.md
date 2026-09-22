@@ -4,6 +4,10 @@ MLS is a muted, low-glare dark theme for terminals, editors, file managers,
 and developer tools. It keeps a near-black canvas, cool blue-gray secondary
 text, amber focus states, olive values, and soft blue structure.
 
+<p align="center">
+  <img src="./assets/mls-showcase.png" alt="MLS theme shown across layered VS Code, Neovim, and Ghostty views" width="1100" />
+</p>
+
 The canonical palette is [`palette.json`](./palette.json). Open
 [`preview.html`](./preview.html) for a no-build visual preview.
 
@@ -92,10 +96,58 @@ code --install-extension ./vscode
 The other adapters follow their native theme paths. See the file layout above
 for the exact source file.
 
+## Nordic MLS
+
+Nordic MLS is a second theme in this repo: a straight port of
+[AlexvZyl/nordic.nvim][nordic-nvim]'s Nord-based palette (Polar Night
+backgrounds, Snow Storm foreground, Frost blues, Aurora accents) to the same
+set of tools, without MLS's warm/amber styling.
+
+| Role | Hex | Use |
+| --- | --- | --- |
+| Background | `#242933` | Main canvas |
+| Panel | `#1E222A` | Status line, tab bar, borders |
+| Highlight | `#2E3440` | Cursorline, active line, panels |
+| Selection | `#434C5E` | Selected text |
+| Foreground | `#BBC3D4` | Default text |
+| Bright foreground | `#E5E9F0` | Titles and emphasized text |
+| Muted | `#60728A` | Comments and secondary text |
+| Yellow | `#EBCB8B` | Keywords, cursor, focus |
+| Red | `#BF616A` | Errors and destructive states |
+| Green | `#A3BE8C` | Strings and success states |
+| Blue | `#81A1C1` | Functions, types, and links |
+| Cyan | `#88C0D0` | Structural accents, tags |
+| Orange | `#D08770` | Constants and numbers |
+| Magenta | `#B48EAD` | Keywords, softer emphasis |
+
+| Tool | Nordic MLS adapter |
+| --- | --- |
+| Ghostty | [`ghostty/nordic-mls`](./ghostty/nordic-mls) |
+| tmux | [`tmux/nordic-mls.conf`](./tmux/nordic-mls.conf) |
+| Zed | [`zed/nordic-mls.json`](./zed/nordic-mls.json) |
+| Helix | [`helix/nordic-mls.toml`](./helix/nordic-mls.toml) |
+| Neovim | [`nvim/colors/nordic-mls.lua`](./nvim/colors/nordic-mls.lua) |
+
+Install the same way as the MLS adapters above (copy into the tool's user
+theme directory and select the theme). The Neovim adapter is a
+self-contained `colors/nordic-mls.lua` file with no plugin dependency — put
+this repo's `nvim/` directory on your `runtimepath` and run
+`:colorscheme nordic-mls`.
+
+Nordic MLS is a palette port; [nordic.nvim][nordic-nvim] remains the
+canonical, actively maintained Nord colorscheme for Neovim with a full plugin
+feature set — check it out directly if you want more than a static port.
+
 ## License and attribution
 
 This repository is MIT-licensed. The MLS palette is an independent adaptation
 of the public [Grok Night theme][grok-night]; check the upstream project for
-its license and attribution terms before redistributing a port.
+its license and attribution terms before redistributing a port. The Nordic
+MLS palette is an independent adaptation of [nordic.nvim][nordic-nvim], which
+is itself based on the [Nord][nord] color palette; check the upstream
+projects for their license and attribution terms before redistributing a
+port.
 
 [grok-night]: https://github.com/xai-org/grok-build/blob/main/crates/codegen/xai-grok-pager-render/assets/grok-night.tmTheme
+[nordic-nvim]: https://github.com/AlexvZyl/nordic.nvim
+[nord]: https://www.nordtheme.com/

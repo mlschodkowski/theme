@@ -1,0 +1,88 @@
+# Nordic MLS: Helix theme derived from AlexvZyl/nordic.nvim (Nord palette).
+attribute = "blue"
+comment = { fg = "comment", modifiers = ["italic"] }
+constant = "orange"
+"constant.builtin" = "orange"
+constructor = "blue"
+function = "fg"
+"function.builtin" = "cyan"
+keyword = "magenta"
+operator = { fg = "yellow", modifiers = ["bold"] }
+punctuation = "comment"
+string = "green"
+"string.escape" = "cyan"
+"string.special" = "teal"
+tag = "blue"
+type = "blue"
+variable = "fg"
+"variable.builtin" = "purple"
+"variable.other.member" = "fg"
+error = "red"
+warning = "yellow"
+info = "blue"
+hint = "teal"
+"diagnostic.error" = { underline = { color = "red", style = "curl" } }
+"diagnostic.warning" = { underline = { color = "yellow", style = "curl" } }
+"diagnostic.info" = { underline = { color = "blue", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "teal", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+"diff.plus" = "green"
+"diff.minus" = "red"
+"diff.delta" = "yellow"
+"markup.bold" = { fg = "yellow", modifiers = ["bold"] }
+"markup.italic" = { fg = "fg", modifiers = ["italic"] }
+"markup.link.url" = { fg = "blue", modifiers = ["underlined"] }
+"markup.list" = "yellow"
+
+"ui.background" = { fg = "fg", bg = "bg" }
+"ui.text" = { fg = "fg", bg = "bg" }
+"ui.text.focus" = { fg = "fg", bg = "surface", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "comment", modifiers = ["italic"] }
+"ui.linenr" = "fg_gutter"
+"ui.linenr.selected" = "yellow"
+"ui.cursor" = { fg = "bg", bg = "yellow" }
+"ui.cursor.primary" = { fg = "bg", bg = "yellow" }
+"ui.cursor.match" = { fg = "yellow", modifiers = ["bold", "underlined"] }
+"ui.selection" = { bg = "selection" }
+"ui.selection.primary" = { bg = "selection" }
+"ui.cursorline.primary" = { bg = "panel" }
+"ui.menu" = { fg = "fg", bg = "panel" }
+"ui.menu.selected" = { fg = "bg", bg = "yellow", modifiers = ["bold"] }
+"ui.popup" = { fg = "fg", bg = "panel" }
+"ui.window" = "surface"
+"ui.statusline" = { fg = "fg_secondary", bg = "panel" }
+"ui.statusline.inactive" = { fg = "comment", bg = "bg" }
+"ui.statusline.normal" = { fg = "bg", bg = "blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "bg", bg = "yellow", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "bg", bg = "magenta", modifiers = ["bold"] }
+"ui.bufferline" = { fg = "comment", bg = "bg" }
+"ui.bufferline.active" = { fg = "fg", bg = "surface", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "bg" }
+"ui.virtual" = "fg_gutter"
+"ui.virtual.inlay-hint" = { fg = "comment", modifiers = ["italic"] }
+"ui.virtual.indent-guide" = "fg_gutter"
+"ui.help" = { fg = "fg", bg = "panel" }
+
+"terminal.blue" = "#81A1C1"
+"terminal.blue_bright" = "#88C0D0"
+
+[palette]
+bg = "#242933"
+panel = "#1E222A"
+surface = "#2E3440"
+selection = "#434C5E"
+fg = "#BBC3D4"
+fg_secondary = "#9CA7C0"
+fg_gutter = "#4C566A"
+comment = "#60728A"
+blue = "#81A1C1"
+cyan = "#88C0D0"
+green = "#A3BE8C"
+magenta = "#B48EAD"
+orange = "#D08770"
+purple = "#B48EAD"
+red = "#BF616A"
+teal = "#8FBCBB"
+yellow = "#EBCB8B"
